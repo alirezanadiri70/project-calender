@@ -26,4 +26,7 @@ container.style.display = 'flex';
 body.style.flexDirection = 'column';
 body.style.alignItems = 'center';
 const today = new Date().getMonth();
-const firstDay = 
+const firstDay = new Date (`${today + 1}/01/${new Date().getFullYear()}`).getDay();
+= new Date(`${today + 1 + 1}/01/${new Date().getFullYear()}`);
+nextMonth.setDate(nextMonth.getDate() -1);
+const lastDay = nextMonth.getDate();
